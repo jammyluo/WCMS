@@ -1,0 +1,775 @@
+<!doctype html>
+<html>
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE"> 
+	<title>艾航软通</title>
+    <meta name="keywords" content="软通">
+    <meta name="description" content="艾航">
+    <meta property="qc:admins" content="15233646176016765100066375" />
+
+	<link rel="stylesheet" type="text/css" href="/static/default/css/base.css">
+	<link rel="stylesheet" type="text/css" href="/static/default/bootstrap3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/static/default/css/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="/static/default/css/main.css">
+    <link rel="stylesheet" type="text/css" href="/static/default/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="/static/default/css/index.css">
+	<script type="text/javascript" src="./static/default/js/jquery.js"></script>
+    <script type="text/javascript" src="./static/default/js/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="./static/default/bootstrap3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./static/default/js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="./static/default/js/snowfall.jquery.js"></script>
+    <script type="text/javascript" src="./static/public/jquery.cookie.js"></script>
+ </head>
+ <body class="home">
+ 	<!--  顶部    start-->
+     <div id="xingfu_Top" class="yiaoBox">
+    <div class="w1220">
+        <span class="dib fr pr5 white lh30">服务热线：0573-83258127</span>
+        <span id="zhuangtai" class="dib fr pr10 white lh30"></span>
+    </div>
+</div>
+<div class="yheaderSign">
+	<div class="w1220">
+		<span class="signLeft c_6 fr dib">
+			<div class="searchT input-group fl mr10">
+                <input id="leiming" type="hidden" name="nid" value="1">
+				<input type="text" name="title" class="form-control search_input c_6" id="goods_name" placeholder="搜一下试试看">
+				<span class="input-group-btn">
+					<button class="btn btn-default search_btn c_6" onclick="search()" type="button"><span class="glyphicon glyphicon-search c_6" aria-hidden="true"></span></button>
+				</span>
+			</div><!-- /input-group -->
+             
+            <script>
+            function search(){
+                var value=$("input[name='title']").val();
+                var src="./index.php?buy/find/?title="+value;
+        	    location.href =src ;
+            };
+            function getCookie(name){
+                var arr = document.cookie.match(new RegExp("(^| )"+name+"=([^;]*)(;|$)"));
+                if(arr != null) return decodeURIComponent(arr[2]);
+                return null;                
+            } 
+            if (getCookie('user')!=null){ 
+                var userNameA=getCookie('user')
+                document.getElementById("zhuangtai").innerHTML='欢迎回来';
+                
+                document.write('<span class="show c_6 fl" ><a class="account dib c_6 lh40" href="./index.php?anonymous/login"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>'+userNameA+'</a>  |  <a class="c_6" href="/index.php?anonymous/signout">退出</a></span>');
+                document.write('<a class="order show c_6 lh40 fl" href="./index.php?order/cart"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>购物车</a>');
+            }else{ 
+                document.write('<a class="account show c_6 lh40 fl mr10" href="./index.php?anonymous/login"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>登录</a>'); 
+                document.write('<a class="account show c_6 lh40 fl" href="/index.php?anonymous/register"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span>注册</a>'); 
+            };
+            </script> 
+            
+		</span>
+	</div>
+</div>
+<div class="yHeader bg_white w">
+    <!-- 导航   start  -->
+	<div class="yNavIndex w1220">
+		<div class="pullDown">
+			<div class="pullDownTitle"></div>
+			<ul class="pullDownList">
+				<li class="menulihover">
+					<i class="listi1"></i>
+					<a href="./index.php?buy/goods/?cid=10">家居生活用品</a>
+                    <!--  ./index.php?buy/goods/?cid=10  -->
+					<span></span>
+				</li>
+				<li>
+					<i class="listi2"></i>
+					<a href="./index.php?buy/goods/?cid=14">个人生活用品</a>
+                    <!--  ./index.php?buy/goods/?cid=14  -->
+					<span></span>
+				</li>
+				<li>
+					<i class="listi3"></i>
+					<a href="./index.php?buy/goods/?cid=11">床上生活用品</a>
+                    <!--  ./index.php?buy/goods/?cid=11  -->
+					<span></span>
+				</li>
+				<li>
+					<i class="listi4"></i>
+					<a href="./index.php?buy/goods/?cid=24">特色推荐</a>
+                    <!--  ./index.php?buy/goods/?cid=24  -->
+					<span></span>
+				</li>
+			</ul>
+			<!-- 下拉详细列表具体分类 start -->
+		 	<div class="yMenuListCon">
+				<div class="yMenuListConin">
+                    
+					<div class="yMenuLCinList">                        
+						<h3><a href="./index.php?buy/goods/?cid=10" class="yListName">厨房用品</a><a href="" class="yListMore"></a></h3>
+						<p>
+							<a href="./index.php?buy/mx/?sku=YD10022" class="ecolor610">汤锅</a>
+							<a href="./index.php?buy/mx/?sku=YD10060">压铸锅</a>
+							<a href="./index.php?buy/mx/?sku=YD10077">单手煎锅</a> 
+							<a href="./index.php?buy/mx/?sku=YD10152">涨型双锅</a>
+						</p>
+					</div>
+    				<div class="yMenuLCinList">                        
+						<h3><a href="./index.php?buy/goods/?cid=11" class="yListName">床上四件套</a><a href="" class="yListMore"></a></h3>
+						<p>
+							<a href="./index.php?buy/mx/?sku=YD00009">流韵梦系列</a>
+							<a href="./index.php?buy/mx/?sku=YD00023">时尚田园系列</a>
+							<a href="./index.php?buy/mx/?sku=YD00047">温馨若梦系列</a> 
+							<a href="./index.php?buy/mx/?sku=YD00061">浪漫花香系列</a>
+    						<a href="./index.php?buy/mx/?sku=YD00160">米兰风韵系列</a> 
+							<a href="./index.php?buy/mx/?sku=YD00184">靓影时风系列</a>
+						</p>
+					</div>
+        			<div class="yMenuLCinList">                        
+						<h3><a href="./index.php?buy/goods/?cid=14" class="yListName">精品袜子</a><a href="" class="yListMore"></a></h3>
+						<p>
+							<a href="./index.php?buy/mx/?sku=YD32109">男精梳棉运动袜</a>
+							<a href="./index.php?buy/mx/?sku=YD32130">休闲男棉袜</a>
+							<a href="./index.php?buy/mx/?sku=YD32185">男精梳棉袜</a>
+    						<a href="./index.php?buy/mx/?sku=YD32086">女精梳棉袜</a>
+						</p>
+					</div>
+					<div class="fr"><a href="./index.php?buy/mx/?sku=YD10152"><img src="/static/default/images/DS_xingfu_index_adv001.jpg"/></a></div>
+				</div>
+
+				<div class="yMenuListConin">
+            		<div class="yMenuLCinList">                        
+						<h3><a href="./index.php?buy/goods/?cid=14" class="yListName">精品袜子</a><a href="" class="yListMore"></a></h3>
+						<p>
+							<a href="./index.php?buy/mx/?sku=YD32109">男精梳棉运动袜</a>
+							<a href="./index.php?buy/mx/?sku=YD32130">休闲男棉袜</a>
+							<a href="./index.php?buy/mx/?sku=YD32185">男精梳棉袜</a>
+    						<a href="./index.php?buy/mx/?sku=YD32086">女精梳棉袜</a>
+						</p>
+					</div>
+                    <div class="yMenuLCinList">                        
+    					<h3><a href="./index.php?buy/goods/?cid=30" class="yListName">唯美围巾</a><a href="" class="yListMore"></a></h3>
+						<p>
+							<a href="./index.php?buy/mx/?sku=200095">大披肩保暖围巾·红黑条纹</a>
+    						<a href="./index.php?buy/mx/?sku=200096">大披肩保暖围巾·红格子</a>
+    						<a href="./index.php?buy/mx/?sku=200097">大披肩保暖围巾·粉格子</a>
+						</p>
+					</div>
+    				<div class="fr"><a href="./index.php?buy/goods/?cid=14"><img src="/static/default/images/DS_xingfu_index_adv002.jpg"/></a></div>
+				</div>
+
+				<div class="yMenuListConin">					
+        			<div class="yMenuLCinList">                        
+						<h3><a href="./index.php?buy/goods/?cid=11" class="yListName">床上四件套</a><a href="" class="yListMore"></a></h3>
+						<p>
+							<a href="./index.php?buy/mx/?sku=YD00009">流韵梦系列</a>
+							<a href="./index.php?buy/mx/?sku=YD00023">时尚田园系列</a>
+							<a href="./index.php?buy/mx/?sku=YD00047">温馨若梦系列</a> 
+							<a href="./index.php?buy/mx/?sku=YD00061">浪漫花香系列</a>
+    						<a href="./index.php?buy/mx/?sku=YD00160">米兰风韵系列</a> 
+							<a href="./index.php?buy/mx/?sku=YD00184">靓影时风系列</a>
+						</p>
+					</div>    				
+        			<div class="yMenuLCinList">                        
+						<h3><a href="./index.php?buy/goods/?cid=11" class="yListName"> </a><a href="" class="yListMore"></a></h3>
+						<p>
+							<a href="./index.php?buy/mx/?sku=YD00207">幸福宣言系列</a>
+							<a href="./index.php?buy/mx/?sku=YD00153">优雅姿态系列</a> 
+							<a href="./index.php?buy/mx/?sku=YD00122">迷人风采系列</a>
+    						<a href="./index.php?buy/mx/?sku=YD00108">格之秀系列</a> 
+							<a href="./index.php?buy/mx/?sku=YD00085">温情系列</a>
+						</p>
+					</div>
+        			<div class="fr"><a href="./index.php?buy/mx/?sku=YD00207"><img src="./static/default/images/DS_xingfu_index_adv003.jpg"/></a></div>
+				</div>
+				<div class="yMenuListConin">
+					<div class="yMenuLCinList">
+    				    
+					</div>                    
+        			<div class="fr"><a href="./index.php?buy/mx/?sku=YD10152"><img src="./static/default/images/DS_xingfu_index_adv004.jpg"/></a></div>
+                </div>
+		 	</div>
+    		<!-- 下拉详细列表具体分类 end -->
+
+		</div>
+        <ul class="yMenuIndex">
+            <li><a href="/" class="yMenua">首页</a></li>
+			<li><a href="./a/201601/36316.html"><span>每周推荐</span></a></li>
+			<li><a href="./a/201512/36309.html">智能产品</a></li>
+			<!-- ./a/201512/36250.html 须知 -->
+    		<li><a href="./index.php?buy/goods/?cid=17">顶上专区</a></li>
+    		<li><a href="./index.php?buy/goods/?cid=16">DIY装饰画</a></li>
+		</ul>
+	</div>
+    <!-- 导航   start  -->
+</div>
+     
+
+ 
+
+
+
+	<!--  顶部    end-->
+    
+    <!-- banner   start -->
+    <div id="owl-demo-oneCro" class="owl-demo-oneCro owl-carousel pr">
+         
+        <a class="item" href=""><img src="./static/attached/adv/201604/2016040815263mr4.jpg" alt="5.1价给你" class="show w bd_n"></a>
+         
+        <a class="item" href="/index.php?buy/goods/?cid=16"><img src="./static/attached/adv/201512/201512030907bmzp.jpg" alt="首页广告2" class="show w bd_n"></a>
+         
+        <a class="item" href=""><img src="./static/attached/adv/201512/2015120309045xeo.jpg" alt="首页广告1" class="show w bd_n"></a>
+                <a class="item" href="/index.php?buy/goods/?cid=16"><img src="./static/attached/adv/201512/201512030907bmzp.jpg" alt="首页广告2" class="show w bd_n"></a>
+        <a class="item" href=""><img src="./static/attached/adv/201512/2015120309045xeo.jpg" alt="首页广告1" class="show w bd_n"></a>
+    </div>
+    <!-- banner   end -->
+	<!-- advBox   start -->
+	<div class="yAdv w ovh">
+		<div class="w1220 pr z-index10 ovh">
+			<div id="owl-demo-four" class="owl-demo-four mt15">
+				<div class="item"><a class="" href=""><img src="/static/default/images/DS_xingfu_index_Sadv01.jpg" class="four_img" alt=""></a></div>
+    			<div class="item"><a class="" href=""><img src="/static/default/images/DS_xingfu_index_Sadv02.jpg" class="four_img" alt=""></a></div>
+    			<div class="item"><a class="" href=""><img src="/static/default/images/DS_xingfu_index_Sadv03.jpg" class="four_img" alt=""></a></div>
+    			<div class="item"><a class="" href=""><img src="/static/default/images/DS_xingfu_index_Sadv04.jpg" class="four_img" alt=""></a></div>
+    			<div class="item"><a class="" href=""><img src="/static/default/images/DS_xingfu_index_Sadv01.jpg" class="four_img" alt=""></a></div>
+			</div>
+			<div class="mt10 mb30">
+				<a class="" href=""><img src="/static/default/images/DS_xingfu_index_tujian.jpg" alt="GTA V"></a>
+				<div id="owl-demo-one" class="owl-demo-one fr pr">
+					<div class="item"><a class="" href=""><img src="/static/default/images/DS_xingfu_index_carousel01.jpg" alt=""></a></div>
+					<div class="item"><a class="" href=""><img src="/static/default/images/DS_xingfu_index_carousel01.jpg" alt=""></a></div>
+					<div class="item"><a class="" href=""><img src="/static/default/images/DS_xingfu_index_carousel01.jpg" alt=""></a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- advBox   end -->
+	<!-- Recommend   start -->
+	<div class="yRecommend ovh pr z-index10">
+		<div class="w1280 rmBox mt20  bg_white ovh">
+			<h1 class="tc">今日热卖</h1>
+			<div class="ttt tc"><p class="red" style="font-size: 56px;margin-top: -49px;line-height: 56px;">.</p><p class="c_9 ft20">Recommend</p></div>
+		</div>
+		<div class="w1280 rmBoxCon mb30 bg_white ovh cartoon">
+			<div class="box pr">
+				<div class="item_img pt15 pr tc" style="border-left:none">
+					<a href="./index.php?buy/mx/?sku=YD10053"><img class="cartoonImg" src="/static/default/images/Pro/1001.jpg" alt=""></a>
+				</div>
+				<div class="item_title" style="border-left: 2px solid #e3e6ea;">
+					<span class="title dib"><a class="c_6" href="./index.php?buy/mx/?sku=YD10053">赤色恋曲系列/18*8CM仿压铸单手汤锅带盖</a></span>
+					<span class="to dib">→</span>
+				</div>
+                <span class="item_money pa c_9"><span class="ft16 pr5">幸福豆:</span>349</span>
+                <span class="item_recommend active glyphicon glyphicon-heart" aria-hidden="true"></span>
+			</div>
+			<div class="box pr">
+				<div class="item_img pt15 pr tc">
+					<a href="./index.php?buy/mx/?sku=YD10060"><img class="cartoonImg" src="/static/default/images/Pro/1002.jpg" alt=""></a>
+				</div>
+				<div class="item_title">
+					<span class="title dib"><a class="c_6" href="./index.php?buy/mx/?sku=YD10060">赤色恋曲系列/20乘8.5CM仿压铸双手汤锅带盖</a></span>
+					<span class="to dib">→</span>
+				</div>
+                <span class="item_money pa c_9"><span class="ft16 pr5">幸福豆:</span>399</span>
+                <span class="item_recommend glyphicon glyphicon-heart" aria-hidden="true"></span>
+			</div>
+			<div class="box pr">
+				<div class="item_img pt15 pr tc">
+					<a href="./index.php?buy/mx/?sku=YD10077"><img src="/static/default/images/Pro/1003.jpg" alt=""></a>
+				</div>
+				<div class="item_title">
+					<span class="title dib"><a class="c_6" href="./index.php?buy/mx/?sku=YD10077">赤色恋曲系列26乘5.5CM仿压铸单手煎锅带盖</a></span>
+					<span class="to dib">→</span>
+				</div>
+                <span class="item_money pa c_9"><span class="ft16 pr5">幸福豆:</span>449</span>
+                <span class="item_recommend glyphicon glyphicon-heart" aria-hidden="true"></span>
+			</div>
+    		<div class="box pr">
+				<div class="item_img pt15 pr tc" style="border-right:none">
+					<a href="./index.php?buy/mx/?sku=200008"><img src="/static/default/images/Pro/1006.jpg" alt=""></a>
+				</div>
+				<div class="item_title" style="border-right: 2px solid #e3e6ea;">
+					<span class="title dib"><a class="c_6" href="./index.php?buy/mx/?sku=200008">现代时尚系列/22*14.5CM不锈钢品味锅</a></span>
+					<span class="to dib">→</span>
+				</div>
+                <span class="item_money pa c_9"><span class="ft16 pr5">幸福豆:</span>279</span>
+                <span class="item_recommend active glyphicon glyphicon-heart" aria-hidden="true"></span>
+			</div>
+			<div class="box pr">
+				<div class="item_img pt15 pr tc" style="border-left:none">
+					<a href="./index.php?buy/mx/?sku=YD10008"><img src="/static/default/images/Pro/1005.jpg" alt=""></a>
+				</div>
+				<div class="item_title" style="border-left: 2px solid #e3e6ea;">
+					<span class="title dib"><a class="c_6" href="./index.php?buy/mx/?sku=YD10008">希腊印象系列/18*9.5CM双手涨型锅带玻璃盖</a></span>
+					<span class="to dib">→</span>
+				</div>
+                <span class="item_money pa c_9"><span class="ft16 pr5">幸福豆:</span>849</span>
+                <span class="item_recommend glyphicon glyphicon-heart" aria-hidden="true"></span>
+			</div>
+			<div class="box pr">
+				<div class="item_img pt15 pr tc">
+					<a href="./index.php?buy/mx/?sku=YD10022"><img src="/static/default/images/Pro/1008.jpg" alt=""></a>
+				</div>
+				<div class="item_title">
+					<span class="title dib"><a class="c_6" href="./index.php?buy/mx/?sku=YD10022">希腊印象系列/24*12.5CM双手涨型锅带玻璃盖</a></span>
+					<span class="to dib">→</span>
+				</div>
+                <span class="item_money pa c_9"><span class="ft16 pr5">幸福豆:</span>1149</span>
+                <span class="item_recommend glyphicon glyphicon-heart" aria-hidden="true"></span>
+			</div>
+			<div class="box pr">
+				<div class="item_img pt15 pr tc">
+					<a href="./index.php?buy/mx/?sku=YD10152"><img src="/static/default/images/Pro/1004.jpg" alt=""></a>
+				</div>
+				<div class="item_title">
+					<span class="title dib"><a class="c_6" href="./index.php?buy/mx/?sku=YD10152">希腊印象系列/20*10CM/24*6CM涨型双锅带玻璃盖</a></span>
+					<span class="to dib">→</span>
+				</div>
+                <span class="item_money pa c_9"><span class="ft16 pr5">幸福豆:</span>1949</span>
+                <span class="item_recommend active glyphicon glyphicon-heart" aria-hidden="true"></span>
+			</div>
+    		<div class="box pr">
+				<div class="item_img pt15 pr tc" style="border-right:none">
+					<a href="./index.php?buy/mx/?sku=YD10046"><img src="/static/default/images/Pro/1007.jpg" alt=""></a>
+				</div>
+				<div class="item_title" style="border-right: 2px solid #e3e6ea;">
+					<span class="title dib"><a class="c_6" href="./index.php?buy/mx/?sku=YD10046">沙滩迷情系列22*14.5CM不锈钢汤锅</a></span>
+					<span class="to dib">→</span>
+				</div>
+                <span class="item_money pa c_9"><span class="ft16 pr5">幸福豆:</span>1049</span>
+                <span class="item_recommend glyphicon glyphicon-heart" aria-hidden="true"></span>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Recommend   end -->
+	<!-- jiaju   start -->
+	<div class="yjiaju  pr z-index10">
+		<div class="titleBox w1220 ovh">
+			<h1 class="dib ft20 lh32 mt15 mb10">家居生活用品</h1>
+			<ul class="nav nav-tabs fr ft16 mt25" role="tablist" id="myTab">
+				<li role="presentation" class=" fl active"><a href="#mj" aria-controls="mj" role="tab" data-toggle="tab">毛巾</a></li>
+				<li role="presentation" class="fl"><a href="#cssjt" aria-controls="cssjt" role="tab" data-toggle="tab">床上四件套</a></li>
+                <!--
+				<li role="presentation" class="fl"><a href="#ws" aria-controls="ws" role="tab" data-toggle="tab">卫生用品</a></li>
+				<li role="presentation" class="fl"><a href="#bh" aria-controls="bh" role="tab" data-toggle="tab">百货</a></li>
+				<li role="presentation" class="fl"><a href="#jd" aria-controls="jd" role="tab" data-toggle="tab">小电器</a></li>
+                -->
+			</ul>
+		</div>
+		<div class="yjiajuCon tab-content w1220 ovh" style="height: 290px;">
+			<div role="tabpanel" class="jiucuo tab-pane fade in active" id="mj">
+				<div class="box tc bg_white">
+					<a class="Pimg" href="./index.php?buy/mx/?sku=YD03208">
+                        <img src="/static/default/images/Pro/2001.jpg" alt="水中花系列34*75米色">
+                        <span class="money" href="">幸福豆:59</span>
+                    </a>
+				</div>
+				<div class="box tc bg_white">
+					<a class="Pimg" href="./index.php?buy/mx/?sku=YD03093">
+                        <img src="/static/default/images/Pro/2002.jpg" alt="馨柔玫瑰印花系列红色">
+    				    <span class="money" href="">幸福豆:79</span>
+					</a>
+				</div>
+				<div class="box tc bg_white">
+					<a class="Pimg" href="./index.php?buy/mx/?sku=YD03062">
+                        <img src="/static/default/images/Pro/2003.jpg" alt="朗柔绣花系列粉红">
+                        <span class="money" href="">幸福豆:59</span>
+                    </a>
+					
+				</div>
+				<div class="box tc bg_white">
+					<a class="Pimg" href="./index.php?buy/mx/?sku=YD03383">
+                        <img src="/static/default/images/Pro/2004.jpg" alt="割绒三件套C版">
+					    <span class="money" href="">幸福豆:299</span>
+                    </a>
+				</div>
+				<div class="box tc bg_white">
+					<a class="Pimg" href="./index.php?buy/mx/?sku=YD03109">
+                        <img src="/static/default/images/Pro/2005.jpg" alt="艾欣圆点系列34*80粉红">
+                        <span class="money" href="">幸福豆:89</span>
+                    </a>
+				</div>
+			</div>
+            
+    		<div role="tabpanel" class="jiucuo fade tab-pane" id="cssjt">
+                
+                    			<div class="box tc bg_white">
+					<a class="Pimg" href="./index.php?buy/mx/?sku=YD00030">
+                        <img src="./static/attached/thumb/201512/201512101540slh2.jpg" alt="">
+                        <span class="money" href="">幸福豆:497.69</span>
+                    </a>
+				</div>
+                    			<div class="box tc bg_white">
+					<a class="Pimg" href="./index.php?buy/mx/?sku=YD00078">
+                        <img src="./static/attached/thumb/201512/20151210153775cr.jpg" alt="">
+                        <span class="money" href="">幸福豆:369.94</span>
+                    </a>
+				</div>
+                    			<div class="box tc bg_white">
+					<a class="Pimg" href="./index.php?buy/mx/?sku=YD00085">
+                        <img src="./static/attached/thumb/201512/2015121016471177.jpg" alt="">
+                        <span class="money" href="">幸福豆:277.46</span>
+                    </a>
+				</div>
+                    			<div class="box tc bg_white">
+					<a class="Pimg" href="./index.php?buy/mx/?sku=YD00115">
+                        <img src="./static/attached/thumb/201512/201512101535b1cu.jpg" alt="">
+                        <span class="money" href="">幸福豆:46.68</span>
+                    </a>
+				</div>
+                    			<div class="box tc bg_white">
+					<a class="Pimg" href="./index.php?buy/mx/?sku=YD00153">
+                        <img src="./static/attached/thumb/201512/201512101532l0u0.jpg" alt="">
+                        <span class="money" href="">幸福豆:450.98</span>
+                    </a>
+				</div>
+                			</div>
+            
+    		<div role="tabpanel" class="jiucuo fade tab-pane" id="ws">
+			</div>
+            
+    		<div role="tabpanel" class="jiucuo fade tab-pane" id="bh">
+			</div>
+            
+    		<div role="tabpanel" class="jiucuo fade tab-pane" id="jd">
+			</div>
+            
+            
+		</div>
+	</div>
+	<!-- jiaju   end -->
+	<!-- geren   start -->
+	
+	<div class="ygeren pb30  pr z-index10">
+    
+    	<div class="titleBox w1220 ovh">
+			<h1 class="dib ft20 lh32 mt15 mb10">个人生活用品</h1>
+			<ul class="nav nav-tabs fr ft16 mt25" role="tablist" id="">
+				<li role="presentation" class=" fl active"><a href="#wz" aria-controls="wz" role="tab" data-toggle="tab">精品袜子</a></li>
+				<li role="presentation" class="fl"><a href="#wj" aria-controls="wj" role="tab" data-toggle="tab">唯美围巾</a></li>
+			</ul>
+		</div>
+    	<div class="yjiajuCon tab-content w1220 ovh" style="height: 290px;">
+        
+			<div role="tabpanel" class="jiucuo tab-pane fade in active" id="wz">
+				<div class="box tc bg_white">
+					<a class="Pimg" href="./index.php?buy/mx/?sku=YD32031">
+                        <img src="/static/default/images/Pro/2006.jpg" alt="女精梳棉袜紫红">
+    				    <span class="money" href="">幸福豆:39</span>
+					</a>
+				</div>
+        		<div class="box tc bg_white">
+					<a class="Pimg" href="./index.php?buy/mx/?sku=YD31096">
+                        <img src="/static/default/images/Pro/2007.jpg" alt="女精梳棉袜深紫">
+                        <span class="money" href="">幸福豆:39</span>
+                    </a>
+				</div>
+				<div class="box tc bg_white">
+					<a class="Pimg" href="./index.php?buy/mx/?sku=YD32093">
+                        <img src="/static/default/images/Pro/2008.jpg" alt="女精梳棉袜咖啡">
+                        <span class="money" href="">幸福豆:39</span>
+                    </a>
+					
+				</div>
+				<div class="box tc bg_white">
+					<a class="Pimg" href="./index.php?buy/mx/?sku=YD31072">
+                        <img src="/static/default/images/Pro/2009.jpg" alt="女精梳棉袜">
+					    <span class="money" href="">幸福豆:39</span>
+                    </a>
+				</div>
+				<div class="box tc bg_white">
+					<a class="Pimg" href="./index.php?buy/mx/?sku=YD32246">
+                        <img src="/static/default/images/Pro/2010.jpg" alt="休闲平板男棉袜">
+                        <span class="money" href="">幸福豆:39</span>
+                    </a>
+				</div>
+			</div>
+            
+        	<div role="tabpanel" class="jiucuo fade tab-pane" id="wj">
+                
+                    			<div class="box tc bg_white">
+					<a class="Pimg" href="./index.php?buy/mx/?sku=200097">
+                        <img src="./static/attached/thumb/201601/201601250942zxkb.png" alt="">
+                        <span class="money" href="">幸福豆:226.72</span>
+                    </a>
+				</div>
+                    			<div class="box tc bg_white">
+					<a class="Pimg" href="./index.php?buy/mx/?sku=200096">
+                        <img src="./static/attached/thumb/201601/201601250942s6yb.png" alt="">
+                        <span class="money" href="">幸福豆:162.43</span>
+                    </a>
+				</div>
+                    			<div class="box tc bg_white">
+					<a class="Pimg" href="./index.php?buy/mx/?sku=200095">
+                        <img src="./static/attached/thumb/201601/201601250900xaye.png" alt="">
+                        <span class="money" href="">幸福豆:191.82</span>
+                    </a>
+				</div>
+                			</div>
+            
+		</div>
+	</div>
+	<!-- geren   end -->
+	<!-- fushi   start -->
+	<div class="yfushi ovh  pr z-index10">
+		<div class="w1280 mt20 mb30 bg_white ovh">
+			<h1 class="ft20 mt30 ml_30">床上四件套</h1>
+			<div class="mt10 ml_30">
+                
+                
+                                
+				<div class="box">
+					<div class="title lh18">
+						<span class="show">时尚田园四件套1.8M</span>
+						<span class="dib c_9" style="border-bottom:1px solid #f00;">DRESS</span>
+						<!--<span class="c_9">(MALE/FEMALE)</span>-->
+					</div>
+					<div class="Pimg pt15 pb15">
+						<a href="./index.php?buy/mx/?sku=YD00030"><img src="./static/attached/thumb/201512/201512101540slh2.jpg" alt=""></a>
+					</div>
+					<div class="tc">
+						<a class="money ft16 c_6 lh24" href="./index.php?buy/mx/?sku=YD00030">幸福豆:497.69</a>
+						<a class="money ft16 c_6 lh24" href="./index.php?buy/mx/?sku=YD00030"><span class="ccc"></span></a>
+					</div>
+				</div>
+                                
+				<div class="box">
+					<div class="title lh18">
+						<span class="show">浪漫花香四件套1.8M</span>
+						<span class="dib c_9" style="border-bottom:1px solid #f00;">DRESS</span>
+						<!--<span class="c_9">(MALE/FEMALE)</span>-->
+					</div>
+					<div class="Pimg pt15 pb15">
+						<a href="./index.php?buy/mx/?sku=YD00078"><img src="./static/attached/thumb/201512/20151210153775cr.jpg" alt=""></a>
+					</div>
+					<div class="tc">
+						<a class="money ft16 c_6 lh24" href="./index.php?buy/mx/?sku=YD00078">幸福豆:369.94</a>
+						<a class="money ft16 c_6 lh24" href="./index.php?buy/mx/?sku=YD00078"><span class="ccc"></span></a>
+					</div>
+				</div>
+                                
+				<div class="box">
+					<div class="title lh18">
+						<span class="show">温情四件套1.5M</span>
+						<span class="dib c_9" style="border-bottom:1px solid #f00;">DRESS</span>
+						<!--<span class="c_9">(MALE/FEMALE)</span>-->
+					</div>
+					<div class="Pimg pt15 pb15">
+						<a href="./index.php?buy/mx/?sku=YD00085"><img src="./static/attached/thumb/201512/2015121016471177.jpg" alt=""></a>
+					</div>
+					<div class="tc">
+						<a class="money ft16 c_6 lh24" href="./index.php?buy/mx/?sku=YD00085">幸福豆:277.46</a>
+						<a class="money ft16 c_6 lh24" href="./index.php?buy/mx/?sku=YD00085"><span class="ccc"></span></a>
+					</div>
+				</div>
+                                
+				<div class="box">
+					<div class="title lh18">
+						<span class="show">格之秀四件套1.8M</span>
+						<span class="dib c_9" style="border-bottom:1px solid #f00;">DRESS</span>
+						<!--<span class="c_9">(MALE/FEMALE)</span>-->
+					</div>
+					<div class="Pimg pt15 pb15">
+						<a href="./index.php?buy/mx/?sku=YD00115"><img src="./static/attached/thumb/201512/201512101535b1cu.jpg" alt=""></a>
+					</div>
+					<div class="tc">
+						<a class="money ft16 c_6 lh24" href="./index.php?buy/mx/?sku=YD00115">幸福豆:46.68</a>
+						<a class="money ft16 c_6 lh24" href="./index.php?buy/mx/?sku=YD00115"><span class="ccc"></span></a>
+					</div>
+				</div>
+                                
+				<div class="box">
+					<div class="title lh18">
+						<span class="show">优雅姿态四件套1.8M</span>
+						<span class="dib c_9" style="border-bottom:1px solid #f00;">DRESS</span>
+						<!--<span class="c_9">(MALE/FEMALE)</span>-->
+					</div>
+					<div class="Pimg pt15 pb15">
+						<a href="./index.php?buy/mx/?sku=YD00153"><img src="./static/attached/thumb/201512/201512101532l0u0.jpg" alt=""></a>
+					</div>
+					<div class="tc">
+						<a class="money ft16 c_6 lh24" href="./index.php?buy/mx/?sku=YD00153">幸福豆:450.98</a>
+						<a class="money ft16 c_6 lh24" href="./index.php?buy/mx/?sku=YD00153"><span class="ccc"></span></a>
+					</div>
+				</div>
+                                
+				<div class="box">
+					<div class="title lh18">
+						<span class="show">米兰风韵四件套1.5M</span>
+						<span class="dib c_9" style="border-bottom:1px solid #f00;">DRESS</span>
+						<!--<span class="c_9">(MALE/FEMALE)</span>-->
+					</div>
+					<div class="Pimg pt15 pb15">
+						<a href="./index.php?buy/mx/?sku=YD00160"><img src="./static/attached/thumb/201512/201512101530uhq0.jpg" alt=""></a>
+					</div>
+					<div class="tc">
+						<a class="money ft16 c_6 lh24" href="./index.php?buy/mx/?sku=YD00160">幸福豆:356.14</a>
+						<a class="money ft16 c_6 lh24" href="./index.php?buy/mx/?sku=YD00160"><span class="ccc"></span></a>
+					</div>
+				</div>
+                                
+				<div class="box">
+					<div class="title lh18">
+						<span class="show">幸福宣言四件套1.8M</span>
+						<span class="dib c_9" style="border-bottom:1px solid #f00;">DRESS</span>
+						<!--<span class="c_9">(MALE/FEMALE)</span>-->
+					</div>
+					<div class="Pimg pt15 pb15">
+						<a href="./index.php?buy/mx/?sku=YD00214"><img src="./static/attached/thumb/201512/20151210152951nx.jpg" alt=""></a>
+					</div>
+					<div class="tc">
+						<a class="money ft16 c_6 lh24" href="./index.php?buy/mx/?sku=YD00214">幸福豆:226.79</a>
+						<a class="money ft16 c_6 lh24" href="./index.php?buy/mx/?sku=YD00214"><span class="ccc"></span></a>
+					</div>
+				</div>
+                				
+			</div>
+		</div>
+	</div>
+	<!-- fushi   end -->
+	<!-- xinqite   start -->
+	<div class="yxinqite ovh pr z-index10">
+		<div class="w1220 mb30 ovh">
+		</div>		
+		<div class="w1220 bg_bin_orange pr" style="margin-bottom:85px;">
+			<div class="jiucuo mt20 ovh">
+				<div class="mt30 mb30 pt30 tc"><img src="/static/default/images/DS_xingfu_index_xqtTlite.jpg" class="" alt=""></div>
+				<div id="owl-demo-three" class="owl-demo-three mt15 pr">
+                    <!--
+					<div class="item"><a class="" href="./index.php?buy/mx/?sku=200010"><img src="./static/default/images/Pro/a1001.jpg" class="three_img" alt=""><br><span class="title">魔声小怪兽<span class="ddd fr"></span></span></a></div>
+					<div class="item"><a class="" href="./index.php?buy/mx/?sku=200009"><img src="./static/default/images/Pro/a1002.jpg" class="three_img" alt=""><br><span class="title">如意太阳炉<span class="ddd fr"></span></span></a></div>
+                    -->
+					<div class="item"><a class="" href="./index.php?buy/mx/?sku=YD00023"><img src="./static/default/images/Pro/a1003.jpg" class="three_img" alt=""><br><span class="title">时尚田园<span class="ddd fr"></span></span></a></div>
+					<div class="item"><a class="" href="./index.php?buy/mx/?sku=YD10046"><img src="./static/default/images/Pro/a1004.jpg" class="three_img" alt=""><br><span class="title">沙滩迷情系列<span class="ddd fr"></span></span></a></div>
+					<div class="item"><a class="" href="./index.php?buy/mx/?sku=YD03109"><img src="./static/default/images/Pro/a1005.jpg" class="three_img" alt=""><br><span class="title">艾欣圆点系列<span class="ddd fr"></span></span></a></div>
+    				<div class="item"><a class="" href="./index.php?buy/mx/?sku=YD10060"><img src="./static/default/images/Pro/a1006.jpg" class="three_img" alt=""><br><span class="title">赤色恋曲系列<span class="ddd fr"></span></span></a></div>
+				</div>
+			</div>
+			<img src="/static/default/images/DS_xingfu_index_liwu.png" class="xqtIcon pa" alt="">
+		</div>
+	</div>
+	<!-- xinqite   end -->
+    <!-- footer   start -->
+     <div class="yfooter">
+	<div class="footer_nav">
+        <div class="w1220 tc">
+            <span class="box mun1 white">
+                <span class="title dib">产品更新咨询</span>
+                
+            </span>
+            <span class="box mun2 white">
+                <span class="title dib">关于商家评价</span>
+                
+            </span>
+            <span class="box mun3 white">
+                <span class="title dib">新品发布直通车</span>
+                
+            </span>
+            <span class="box mun4 white">
+                <span class="title dib">寻找心中新奇特</span>
+                
+            </span>
+        </div>   
+	</div>
+</div>
+<script type="text/javascript" src="../../static/case/scj.js"></script>
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1256924761'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/stat.php%3Fid%3D1256924761%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+
+<script>
+$(function(){
+
+  getScjNum();
+})
+</script>
+
+
+
+
+
+    <!-- footer   end -->
+    <div class="cart">
+<a href="javascript:void(0)" onclick="P8.startGroupChat(174159)" class="zxzx">在线咨询</a>
+<a href="javascript:void(0)" onclick="P8.startGroupChat(174159)" class="sh">售后</a>
+<a href="/index.php?order/cart" class="scj">购物车<span class="scj_num">0</span></a>
+<a href="#xingfu_Top" class="backtop">返回顶部</a>
+
+</div>
+<script language="javascript" src="http://api.pop800.com/800.js?n=174159&t=3&l=cn&w=1494"></script>
+
+
+<style>
+/*收藏夹 购物车*/
+.cart{position:fixed;right:0px;top:20%;width:70px;height:322px;border:1px solid #ccc;z-index: 10;}
+.cart a{display:block;width:68px;height:80px;text-align:center;padding-top:58px;background-color: #f5f5f5;border-bottom:1px solid #e8e8e8;}
+.cart a:hover{color:#fff;background-color:#f81e46}
+.cart .zxzx{background:url(/static/default/images/icon/new_zixun.gif) no-repeat;}
+.cart .zxzx:hover{background-position: -0px -80px;}
+.cart .sh{background:url(/static/default/images/icon/new_zixun.gif) no-repeat -70px 0px;}
+.cart .sh:hover{background-position: -70px -80px;}
+.cart .scj{position:relative;background:#f5f5f5 url(/static/default/images/icon/new_zixun.gif) no-repeat -263px 0px;}
+.cart .scj:hover{background-position: -263px -80px;}
+.cart .scj .scj_num{position:absolute;width:16px;height:16px;font-size:12px;border-radius:12px;background:#f81e46;color:#fff;font-size:12px;line-height:16px;top:5px;right:10px;}
+.cart .backtop{background:url(/static/default/images/icon/new_zixun.gif) no-repeat -205px 0px;}
+.cart .backtop:hover{background-position: -205px -80px;}
+</style>
+
+    
+    <script>
+        
+    	$("#owl-demo-oneCro").owlCarousel({
+            autoPlay: 4000,
+			navigation : false,
+			slideSpeed : 300,
+			paginationSpeed : 400,
+			singleItem : true,
+            pagination :false
+		})    
+    	$("#owl-demo-four").owlCarousel({
+			autoPlay: 5000, //Set AutoPlay to 3 seconds
+			items : 4,
+			pagination :false
+		});
+		$("#owl-demo-one").owlCarousel({
+			navigation : true,
+			slideSpeed : 300,
+			paginationSpeed : 400,
+			singleItem : true
+		});
+		$("#owl-demo-three").owlCarousel({
+			itemsCustom : [
+				[0, 1],
+				[1220,3]
+			],
+			autoPlay: 5000,
+			pagination:false,
+			navigation: true,
+			navigationText:["",""]
+		});  
+		$(".pullDownList li").hover(function(){
+			$(".yMenuListCon").fadeIn();
+			var index=$(this).index(".pullDownList li");
+			$(this).addClass("menulihover").siblings().removeClass("menulihover");
+			$(this).addClass("menuliselected").siblings().removeClass("menuliselected");
+			$($(".yMenuListConin")[index]).fadeIn().siblings().fadeOut();
+		},function(){
+			
+		});
+		$(".pullDown").mouseleave(function(){
+			$(".yMenuListCon").fadeOut();
+			$(".yMenuListConin").fadeOut();
+			$(".pullDownList li").removeClass("menulihover");
+
+		});
+    </script>
+    <script>
+        $(document).snowfall('clear');
+        $(document).snowfall({
+            image: "./static/default/images/icon/huaban.png",
+            flakeCount:450,
+            minSize: 5,
+            maxSize: 20
+        });
+    </script>
+    
+</body>
+</html>
+
+
+

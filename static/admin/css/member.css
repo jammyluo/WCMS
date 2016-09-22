@@ -1,0 +1,34 @@
+body{font-family:"微软雅黑"}
+.main{width:925px;height:234px;border:1px  #d2d2d2 solid;}
+.main .face{width:161px;height:232px;float:left;text-align:center;}
+.main .face img{width:150px;height:150px;margin:10px 5px 10px 5px}
+.main .face a{color: #d62f26;text-decoration:none;font-size:12px;}
+.main .face a:hover{text-decoration:underline;}
+
+.main .ziliao{width:442px;height:232px;border-left:1px #d2d2d2 solid;float:left;padding-left:10px;}
+.ziliao h1{color:#434343;font-size:18px;display:block;float:left;width:80px;}
+.ziliao h4{font-size: 12px;
+    font-weight: 400;
+    display: block;
+    height: 30px;
+    line-height: 45px;}
+.ziliao a{text-decoration:none;}
+.ziliao a:hover{text-decoration:none;}
+
+.items{height:75px;border-top:1px #d2d2d2 solid;border-bottom:1px #d2d2d2 solid;padding: 0;margin: 0;}
+.items li{float:left;list-style:none;text-align:center;}
+.items p{font-size:12px;margin:0;padding:0;color:#434343;}
+.items .title{font-size: 24px;color: #d62f26;}
+.mail p{font-size:12px;margin:0;padding:0;color:#434343;height:27px;line-height:27px;}
+.qd{text-align: center;width: 250px;background: #eee;height: 100%;float:right;}
+
+
+.qd a{display:block;width:120px;height:46px;float:left;text-decoration:none;color:#666;font-size:12px;text-align:center;line-height:46px;border-left:1px solid #ccc;border-bottom:1px solid #ccc;}
+.qd a:hover{color:#fff;background:#ff5f19;}
+
+.message{width:925px;height:300px;border: 1px solid #d2d2d2;margin-top:10px;}
+.message .title{font-size: 12px;color: #434343;background:#eee;padding-left:23px;height: 45px;line-height: 45px;border-bottom:2px solid #d2d2d2;}
+ul{list-style:none;}
+ul li{height:30px;}
+ul li a{text-decoration: none;color:#333;}
+ul li .label{background:#d62f26;color:#fff;border:#d62f26;padding:2px;border-radius: 4px;}
