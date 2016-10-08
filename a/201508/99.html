@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <title>WCMS内容管理系统</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta name="keywords" content="WCMS，免费，自定义">
+    <meta name="description" content="WCMS开源项目 免费自定义">
+    <script src="../../static/theme/assets/js/jquery.js"></script>
+     <script src="../../static/public/jquery.cookie.js"></script>
+
+    <link rel="stylesheet" href="../../static/theme/assets/style.css">
+    <link rel="stylesheet" href="../../static/theme/assets/animation.css">
+    <link rel="stylesheet" href="../../static/theme/assets/main.css">
+
+  </head>
+  <body>
+  <div class="navbar navbar-default">
+        <div class="container">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse-nav">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html" title="$config.website_name}">
+                  <span class="logo">
+                  WCMS内容管理系统
+                  </span>
+                </a>
+              </div>
+            <div class="collapse navbar-collapse navbar-collapse-nav" style="height:0px;">
+                  <ul class="nav navbar-nav navbar-right">
+                        <li><a href="../../index.html">首页</a></li>
+                        <li><a href="../../index.php?news/c/?cid=2">文章存档</a></li>
+                        <li class="login"><a href="../../index.php?anonymous/register">注册</a></li>
+
+                        <li class="login"><a href="../../index.php?anonymous/login">登录</a></li>
+                        <li class="islogin"></li>
+                  </ul>
+              </div>
+        </div>
+</div>
+ 
+ 
+ <section id="main" class="container">
+    <section class="posts block a-fadeinL">
+      
+      <article class="post ">
+        <h2 class="title">
+          标签使用方法
+        </h2>
+        <div class="meta">
+          <time>2015-08-13</time>   <span style="margin-left:30px;" id="views"> 1次浏览</span>
+        </div>
+        <div class="entry">
+        <p style="white-space: normal;">除了支持smarty全部标签外，主要还有以下2个标签</p><h1>list标签</h1><p>侧边栏有时候会调用一些最新的资讯，这个时候有2种方法可以解决，第一种就是使用list标签进行调用，另外一种是插件使用，我们这里先说第一种 参数如下</p><pre class="brush:php;toolbar:false">{list&nbsp;cid=2&nbsp;&nbsp;assign=hot&nbsp;num=10}
+{foreach&nbsp;from=$hot&nbsp;item=l}
+&lt;a&nbsp;href=&quot;.{$l.html}&quot;&gt;{$l.title}&lt;/a&gt;
+{/foreach}</pre><p><br/></p><h1>category标签</h1><p>主要用来调用子类</p><pre class="brush:php;toolbar:false">{category&nbsp;fid=2&nbsp;assign=soncate}</pre><p><br/></p>
+</div>
+
+  <div class="tags">
+        
+        <p>
+          Tags:
+          
+          <a href="/tag/mac">mac</a>，
+          
+          <a href="/tag/命令">命令</a>
+          
+        </p>
+        
+       
+      </div>
+<div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_print" data-cmd="print" title="分享到打印"></a><a href="#" class="bds_linkedin" data-cmd="linkedin" title="分享到linkedin"></a><a href="#" class="bds_mshare" data-cmd="mshare" title="分享到一键分享"></a><a href="#" class="bds_copy" data-cmd="copy" title="分享到复制网址"></a></div>
+
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"16"},"share":{},"image":{"viewList":["weixin","qzone","tsina","tqq","renren","print","linkedin","mshare","copy"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["weixin","qzone","tsina","tqq","renren","print","linkedin","mshare","copy"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+     
+
+      </article>
+     
+   
+     
+    </section>
+   
+       <section class="posts block a-fadeinL">
+
+   <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<div class="ds-thread" data-thread-key="99" data-title="标签使用方法" data-url="/a/201508/99.html"></div>
+
+
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"wcms"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	
+<!-- 多说公共JS代码 end -->
+ </section>
+   
+      <div class="sidebar">
+          <div class="block a-fadeinR" style="overflow:visible">
+           <div class="widget about">
+                <strong class="wt">关于我们</strong>
+                <div class="wc">
+                    <p style="text-indent: 20px;"></p>
+                    <p style="text-indent: 20px;">
+                    
+                  <div class="sep10"></div>
+                </div>
+                <strong class="wt">联系方式</strong>
+                <div style="position:relative;">
+                     <div class="clearfix"></div>
+                 </div>
+              </div>
+            <div class="clearfix"></div>
+          </div>
+
+       
+
+          
+         <div class="block a-fadeinR">
+           <div class="widget about">
+                <strong class="wt">热门文章</strong>
+                <div class="wc">
+                    <ul>
+                          
+                                                  <li><a href="../../a/201508/99.html" title="标签使用方法">标签使用方法</a></li>
+                                               <li><a href="../../a/201508/98.html" title="WCMS V9.2 发布啦">WCMS V9.2 发布啦</a></li>
+                                 
+                       
+                    </ul>
+                  <div class="sep10"></div>
+                </div>
+              </div>
+              
+          </div>
+
+       <input type="hidden" name="contentid" value="99">
+    
+          
+      </div>
+</section>
+ 
+ <script>
+ $(function(){
+        var contentid=$("input[name='contentid']").val();
+$.get("../../index.php?news/views/?id="+contentid,function(data){
+$("#views").html("+"+data.data+"次浏览");
+
+},"json") 
+ })
+ </script>
+ 
+    <footer id="main-footer">
+    <div class="container a-fadeinL">
+         <span style="color:#20558a;">
+              <p>Copyright © WCMS开源项目   <a href="http://www.miibeian.gov.cn" target="_blank">ICP备案号</a>
+          </p>
+    </div>
+    </footer>
+
+
+    <div class="actGotop" id="backtop" style="display: block;">
+      <a href="javascript:;" title="返回顶部"></a>
+    </div>
+
+
+    <script src='../../static/theme/assets/js/prettify.js'></script>
+    
+    <script type='text/javascript'>
+      $(document).ready(function(){
+      islogin();
+        $("#backtop").hide();
+        $(window).scroll(function () {
+          if ($(this).scrollTop() > 100) {
+            $('#backtop').fadeIn();
+          } else {
+            $('#backtop').fadeOut();
+          }
+        });
+        $('#backtop').click(function () {
+          $('body,html').animate({
+            scrollTop: 0
+          }, 500);
+        });
+        $("pre").addClass("prettyprint");
+        prettyPrint();
+      });
+
+
+   function islogin(){
+        $(".islogin").hide();
+       var cookie=$.cookie("user");   
+       if(cookie==undefined){
+      return;
+       }else{
+
+           $(".login").hide();
+           $(".islogin").after("<li><a href='../../index.php?anonymous/login'>你好,"+cookie+"</a></li>")
+
+       }
+   }
+    </script>
+    
+  </body>
+</html>

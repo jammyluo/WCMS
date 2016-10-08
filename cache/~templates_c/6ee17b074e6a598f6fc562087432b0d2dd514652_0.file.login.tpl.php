@@ -1,3 +1,29 @@
+<?php /* Smarty version 3.1.27, created on 2016-10-08 08:42:37
+         compiled from "/opt/lampp/htdocs/WCMS/app/view/anonymous/login.tpl" */ ?>
+<?php
+/*%%SmartyHeaderCode:158281952957f840fd4f05f9_00018559%%*/
+if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    '6ee17b074e6a598f6fc562087432b0d2dd514652' => 
+    array (
+      0 => '/opt/lampp/htdocs/WCMS/app/view/anonymous/login.tpl',
+      1 => 1474562498,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '158281952957f840fd4f05f9_00018559',
+  'has_nocache_code' => false,
+  'version' => '3.1.27',
+  'unifunc' => 'content_57f840fd52ec60_03812479',
+),false);
+/*/%%SmartyHeaderCode%%*/
+if ($_valid && !is_callable('content_57f840fd52ec60_03812479')) {
+function content_57f840fd52ec60_03812479 ($_smarty_tpl) {
+
+$_smarty_tpl->properties['nocache_hash'] = '158281952957f840fd4f05f9_00018559';
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html lang="en">
@@ -14,10 +40,14 @@
 	<!-- end: Mobile Specific -->
 	
 	<!-- start: CSS -->
-		<script src="./static/public/jquery-1.11.0.min.js" type="text/javascript" ></script>
+		<?php echo '<script'; ?>
+ src="./static/public/jquery-1.11.0.min.js" type="text/javascript" ><?php echo '</script'; ?>
+>
 		<link href="./static/bootstrap3/css/bootstrap.min.css" rel="stylesheet" />
 		<link href="./static/mycss/login.css" rel="stylesheet" />
-		<script type="text/javascript" src="./static/public/less.min.js" ></script>
+		<?php echo '<script'; ?>
+ type="text/javascript" src="./static/public/less.min.js" ><?php echo '</script'; ?>
+>
 	<!-- end: CSS -->
 
     <style type="text/css">
@@ -110,8 +140,9 @@
     		</div>
     	</div>
    
-  {literal}
-  <script>
+  
+  <?php echo '<script'; ?>
+>
   $(document).ready(function(){
 
 $("#mobile_phone").focus();
@@ -225,8 +256,12 @@ $("#mobile_phone").focus();
 		  			    document.getElementById('verifyImg').src= './index.php?anonymous/captcha/?'+timenow;
 		  			}
 
-  </script>
-  {/literal}  
+  <?php echo '</script'; ?>
+>
+    
     
   </body>
 </html>
+<?php }
+}
+?>

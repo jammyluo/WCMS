@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <title>资讯管理系统</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta name="keywords" content="资讯管理系统">
+    <meta name="description" content="资讯管理系统">
+    <script src="../../static/theme/assets/js/jquery.js"></script>
+     <script src="../../static/public/jquery.cookie.js"></script>
+
+    <link rel="stylesheet" href="../../static/theme/assets/style.css">
+    <link rel="stylesheet" href="../../static/theme/assets/animation.css">
+    <link rel="stylesheet" href="../../static/theme/assets/main.css">
+
+  </head>
+  <body>
+  <div class="navbar navbar-default">
+        <div class="container">
+              <div class="navbar-header">
+                <a class="navbar-brand" href="../../index.html" title="$config.website_name}">
+                  <span class="logo">
+                  资讯管理系统
+                  </span>
+                </a>
+              </div>
+        </div>
+</div>
+ 
+ <style>
+ .navbar-default{background:#545652}
+
+ </style>
+ 
+ 
+ <section id="main" class="container">
+    <section class="posts block a-fadeinL">
+      
+      <article class="post ">
+        <h2 class="title">
+          测试三
+        </h2>
+        <div class="meta">
+          <time>2016-09-27</time>   <span style="margin-left:30px;" id="views"> 1次浏览</span>
+        </div>
+        <div class="entry">
+        <p>获取手机储存图像功能打不开，获取手机储存视频打不开、依然没有看见链接地址！</p>
+</div>
+<div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_print" data-cmd="print" title="分享到打印"></a><a href="#" class="bds_linkedin" data-cmd="linkedin" title="分享到linkedin"></a><a href="#" class="bds_mshare" data-cmd="mshare" title="分享到一键分享"></a><a href="#" class="bds_copy" data-cmd="copy" title="分享到复制网址"></a></div>
+
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"16"},"share":{},"image":{"viewList":["weixin","qzone","tsina","tqq","renren","print","linkedin","mshare","copy"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["weixin","qzone","tsina","tqq","renren","print","linkedin","mshare","copy"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+     
+
+      </article>
+    </section>
+       <input type="hidden" name="contentid" value="36358">
+           
+</div>
+</section>
+ 
+ <script>
+ $(function(){
+        var contentid=$("input[name='contentid']").val();
+$.get("../../index.php?news/views/?id="+contentid,function(data){
+$("#views").html("+"+data.data+"次浏览");
+
+},"json") 
+ })
+ </script>
+ 
+    <footer id="main-footer">
+    <div class="container a-fadeinL">
+         <span style="color:#20558a;">
+              <p>Copyright © WCMS   <a href="http://www.miibeian.gov.cn" target="_blank">ICP备案号</a>
+          </p>
+    </div>
+    </footer>
+
+
+    <div class="actGotop" id="backtop" style="display: block;">
+      <a href="javascript:;" title="返回顶部"></a>
+    </div>
+
+
+    <script src='../../static/theme/assets/js/prettify.js'></script>
+    
+    <script type='text/javascript'>
+      $(document).ready(function(){
+      islogin();
+        $("#backtop").hide();
+        $(window).scroll(function () {
+          if ($(this).scrollTop() > 100) {
+            $('#backtop').fadeIn();
+          } else {
+            $('#backtop').fadeOut();
+          }
+        });
+        $('#backtop').click(function () {
+          $('body,html').animate({
+            scrollTop: 0
+          }, 500);
+        });
+        $("pre").addClass("prettyprint");
+        prettyPrint();
+      });
+
+
+   function islogin(){
+        $(".islogin").hide();
+       var cookie=$.cookie("user");   
+       if(cookie==undefined){
+      return;
+       }else{
+
+           $(".login").hide();
+           $(".islogin").after("<li><a href='../../index.php?anonymous/login'>你好,"+cookie+"</a></li>")
+
+       }
+   }
+    </script>
+    
+  </body>
+</html>

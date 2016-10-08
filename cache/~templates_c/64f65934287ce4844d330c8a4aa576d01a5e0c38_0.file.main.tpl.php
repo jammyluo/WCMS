@@ -1,3 +1,33 @@
+<?php /* Smarty version 3.1.27, created on 2016-10-07 23:19:56
+         compiled from "/opt/lampp/htdocs/WCMS/app/view/news/main.tpl" */ ?>
+<?php
+/*%%SmartyHeaderCode:133859474357f7bd1c635ff2_92243276%%*/
+if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    '64f65934287ce4844d330c8a4aa576d01a5e0c38' => 
+    array (
+      0 => '/opt/lampp/htdocs/WCMS/app/view/news/main.tpl',
+      1 => 1475851293,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '133859474357f7bd1c635ff2_92243276',
+  'variables' => 
+  array (
+    'user' => 0,
+  ),
+  'has_nocache_code' => false,
+  'version' => '3.1.27',
+  'unifunc' => 'content_57f7bd1c66c689_67032933',
+),false);
+/*/%%SmartyHeaderCode%%*/
+if ($_valid && !is_callable('content_57f7bd1c66c689_67032933')) {
+function content_57f7bd1c66c689_67032933 ($_smarty_tpl) {
+
+$_smarty_tpl->properties['nocache_hash'] = '133859474357f7bd1c635ff2_92243276';
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html lang="en">
@@ -40,7 +70,8 @@
 	    <!--
             <ul class="nav navbar-right top-nav">
                 <li class="dropdown">
-                    <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> {$user.username} <b class="caret"></b></a>
+                    <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <?php echo $_smarty_tpl->tpl_vars['user']->value['username'];?>
+ <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li>
                             <a href="javascript:qingli();"><i class="fa fa-fw fa-gear"></i> 清理缓存</a>
@@ -59,11 +90,11 @@
                     <li>
                         <a href="javascript:jumpUrl('./index.php?factory/c/?mid=1');"><i class="fa fa-fw fa-dashboard"></i> 文章管理</a>
                     </li>
-                    {if $user.manager==1}
+                    <?php if ($_smarty_tpl->tpl_vars['user']->value['manager'] == 1) {?>
                         <li>
                          <a href="javascript:jumpUrl('./index.php?member/listing');"><i class="fa fa-fw fa-dashboard"></i> 会员列表 </a>
                         </li>
-                    {/if}
+                    <?php }?>
                         <li>
                             <a href="javascript:qingli();"><i class="fa fa-fw fa-gear"></i> 清理缓存</a>
                         </li>
@@ -75,20 +106,25 @@
             </div>
             <!-- /.navbar-collapse -->
         </nav>
-        <iframe class="panel panel-default" src="./index.php?factory/c/?mid=1" id="iframe" scrolling="true" Height=1000 width=100%></iframe>
+        <iframe class="panel panel-default" src="./index.php?factory/c/?mid=1" id="iframe" scrolling="true" Height=1000 width=100<?php echo '%>';?></iframe>
     </div>
     <!-- /#wrapper -->
 
     
     
 	<!-- 如果要使用Bootstrap的js插件，必须先调入jQuery -->
-	<script src="http://o.bkclouds.cc/static_api/v3/assets/js/jquery-1.10.2.min.js"></script>
+	<?php echo '<script'; ?>
+ src="http://o.bkclouds.cc/static_api/v3/assets/js/jquery-1.10.2.min.js"><?php echo '</script'; ?>
+>
 	<!-- 包括所有bootstrap的js插件或者可以根据需要使用的js插件调用　-->
-	<script src="http://o.bkclouds.cc/static_api/v3/assets/bootstrap-3.3.4/js/bootstrap.min.js"></script>
+	<?php echo '<script'; ?>
+ src="http://o.bkclouds.cc/static_api/v3/assets/bootstrap-3.3.4/js/bootstrap.min.js"><?php echo '</script'; ?>
+>
 
     
-{literal}
-<script>
+
+<?php echo '<script'; ?>
+>
 $(function () {
 
 	addmenu(75);
@@ -155,10 +191,14 @@ function qingli() {
 		alert(data.message)
 	}, "json");
 }
-</script>
-{/literal}
+<?php echo '</script'; ?>
+>
+
 
 
 </body>
 
 </html>
+<?php }
+}
+?>

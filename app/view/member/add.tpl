@@ -50,7 +50,7 @@
 <td><input type="text" name="codeimg" id="codeimg" class="btinput" style="width:80px;marign-right:10px;"/><img src="./index.php?anonymous/captcha"  id="codeimgs"  style="margin-left:20px;"/><a href="javascript:void(0)" onclick="changeImg()">换一张?</a></td></tr>
 			  <tr>
 				<td> </td>
-				<td><a href="javascript:register()" class="btn btn-warning">{$lang['CREATE']}</a></td>
+				<td><a href="javascript:register()" class="btn btn-warning">创建</a></td>
 				
 			  </tr>
 		</table>
